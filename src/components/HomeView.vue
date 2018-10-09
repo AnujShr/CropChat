@@ -16,6 +16,9 @@
         <router-link class="add-picture-button mdl-button mdl-js-button mdl-button--fab mdl-button--colored" to="/post">
             <i class="material-icons">add</i>
         </router-link>
+        <router-link class="take-picture-button mdl-button mdl-js-button mdl-button--fab mdl-button--colored" to="/camera">
+            <i class="material-icons">camera_alt</i>
+        </router-link>
     </div>
 </template>
 <script>
@@ -81,5 +84,13 @@
         color: #fff;
         font-size: 14px;
         font-weight: bold;
+    }
+</style>
+<style scoped>
+    .take-picture-button {
+        position: fixed;
+        right: 24px;
+        bottom: 90px;
+        z-index: 5;
     }
 </style>

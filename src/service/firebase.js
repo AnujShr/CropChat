@@ -1,5 +1,7 @@
 import firebase from 'firebase'
 
+
+
 var config = {
     apiKey: "AIzaSyBiws4WsghK8Z58WAK8CkP_sTJ30p2S1r0",
     authDomain: "cropchat-2544f.firebaseapp.com",
@@ -9,7 +11,14 @@ var config = {
     messagingSenderId: "900218769990"
 };
 firebase.initializeApp(config);
-
+const database = firebase.database();
+const storage =  firebase.storage();
 export default {
-    database: firebase.database()
+    database: firebase.database(),
+    storage: firebase.storage(),
 }
+export {
+    storage,
+    database
+}
+
